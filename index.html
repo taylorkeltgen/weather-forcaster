@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Forcaster</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="d-flex justify-content-center col-12">
+      <h1 class="">Weather Dashboard</h1>
+    </header>
+    <main class="container d-flex justify-content-between col-12">
+      <section class="d-flex row col-3">
+        <form id="search-form" action="" class="d-flex">
+          <div class="d-flex-column justify-content-between">
+            <label for="search"><h2>Search for a City:</h2></label>
+            <input
+              type="text"
+              name="search"
+              id="search-input"
+              placeholder="San Diego"
+              class="width"
+            />
+            <button type="submit" id="search-btn" class="btn btn-primary width">
+              Search
+            </button>
+          </div>
+          <div class="br"></div>
+          <div id="history-container">
+            <button type="button" id="" class="btn btn-secondary width">
+              History
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section id="search-results" class="d-flex row col-9">
+        <div class="width">
+          <div id="city-details">
+            <h2 id="city-title">
+              <span id="current-city">City Name</span>
+              (<span id="current-date">Date</span>)
+              <span id="current-icon"></span>
+            </h2>
+            <p>Temp: <span id="current-temp"></span>ºF</p>
+            <p>Wind: <span id="current-wind"></span> MPH</p>
+            <p>Humidity: <span id="current-humid"></span> %</p>
+            <p>UV Index: <span id="current-uv"></span></p>
+          </div>
+          <div id="forecast">
+            <h3>5-Day Forecast:</h3>
+            <div id="day-1"></div>
+            <div id="day-2"></div>
+            <div id="day-3"></div>
+            <div id="day-4"></div>
+            <div id="day-5"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
 </html>

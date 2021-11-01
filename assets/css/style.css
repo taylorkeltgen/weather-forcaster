@@ -1,0 +1,33 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 10px 0px;
+}
+
+header {
+  color: white;
+  background-color: blue;
+  width: 100%;
+  padding: 10px;
+}
+
+#city-details {
+  padding: 10px;
+  border: solid 1px black;
+}
+
+.width {
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.br {
+  border-bottom: solid black;
+  /* margin-bottom: 5px; */
+}
