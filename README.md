@@ -19,11 +19,12 @@
 * THEN I am again presented with current and future conditions for that city
 
 ## Website: 
-* https://taylorkeltgen.github.io/
+*  https://taylorkeltgen.github.io/weather-forcaster/
 
 
 ## Screenshot:
-* 
+* [Screen Shot 2021-10-31 at 11 12 13 PM](https://user-images.githubusercontent.com/88693758/139620708-12d81b0d-5b47-41cc-af86-44beefabe98b.png)
+
 
 
 ## Contributions:
